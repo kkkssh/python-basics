@@ -26,7 +26,7 @@ print(type(best_grade))
 print(type(number_of_pets))
 
 
-# Python has built-in functions to convert data types - int(), str(), float(), bool()
+# Type conversion : int(), str(), float(), bool()
 # int()
 age = "33"
 print(type(age))
