@@ -1,16 +1,40 @@
-#Types : strings, integers, floats, booleans
+# =========================
+# DATA TYPES
+# =========================
 
-# String : characters between quotes " "
+# STRING : characters between quotes " "
 country = "UK"
 
-# Integer : represents whole numbers without decimal places
-score = 13
+# STRING CONCATENATION (expression)
+first_name = "Sanghee"
+last_name = "Kim"
 
-# Float : describes floating-point numbers with one or more decimal places after a point
+# using variables
+full_name = first_name + " " + last_name
+print("Full name:", full_name)
+
+# mixing variable and string
+print("Direct:", first_name + " Kim")
+
+
+# NUMERIC TYPES
+# INTEGER : represents whole numbers without decimal places
+a = 10
+b = 3
+# ARITHMETIC OPERATIONS (expressions)
+print("Addition:", a + b)       # +
+print("Subtraction:", a - b)    # -
+print("Multiplication:", a * b) # *
+print("Division:", a / b)       # /
+print("Floor division:", a // b)  
+print("Remainder:", a % b)        
+
+# FLOAT : describes floating-point numbers with one or more decimal places after a point
 pi = 3.14159
 
-# Boolean : the special values True and False.
-#           when storing True in is_on, we say that we assign a value to a variable.
+
+# BOOLEAN : the special values True and False.
+#           when storing True in is_on, we say that we assign a value to a variable
 is_on = True
 
 
@@ -27,7 +51,7 @@ print("type(best_grade):", type(best_grade))
 print("type(number_of_pets):", type(number_of_pets))
 
 
-# Type conversion : int(), str(), float(), bool()
+# TYPE CONVERSION : int(), str(), float(), bool()
 # int()
 print("\n=== int() conversion ===")
 age = "33"
