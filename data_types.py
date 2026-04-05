@@ -18,9 +18,11 @@ print("Direct:", first_name + " Kim")
 
 
 # NUMERIC TYPES
+
 # INTEGER : represents whole numbers without decimal places
 a = 10
 b = 3
+
 # ARITHMETIC OPERATIONS (expressions)
 print("Addition:", a + b)       # +
 print("Subtraction:", a - b)    # -
@@ -33,9 +35,24 @@ print("Remainder:", a % b)
 pi = 3.14159
 
 
-# BOOLEAN : the special values True and False.
+# BOOLEAN : the special values True and False
 #           when storing True in is_on, we say that we assign a value to a variable
 is_on = True
+is_off = False
+print("type(is_on):", type(is_on))
+
+# BOOLEAN FROM EXPRESSIONS
+print(5 > 3)   # True 
+print(2 > 10)  # False
+
+# NOT OPERATOR (negation)
+print(not True)   # False
+print(not False)  # True
+
+# using variables
+print(not is_off) # True
+print(not is_on)   # False
+
 
 
 # type() : if we are unsure of a value type, we can get a variable's type using type() with the variable name
