@@ -54,4 +54,25 @@ if available:
 if not available:
     print("Out of stock")
 
+# IF-ELSE
+if available:
+    print("1 in stock")
+else:
+    print("Out of stock")
 
+number = 99
+if number == 1:
+    print("It's 1")
+else:
+    print("It's not 1")
+
+# IF-ELIF-ELSE : multiple conditions
+hour = 20
+if hour < 12:
+    print("Good morning")
+elif hour < 17:
+    print("Good afternoon")
+elif hour < 21:
+    print("Good evening")
+else:
+    print("Good night")
