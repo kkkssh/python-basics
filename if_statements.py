@@ -25,3 +25,33 @@ if con:
     print("Look at me")
 #  print("I'm a code block")
 
+# COMPARISON OPERATORS
+answer = "Picasso"
+if answer == "Picasso":
+#   print(answer + " is correct!")
+    print(f"{answer} is correct!")
+
+if answer != "Picasso":
+    print(answer + " is wrong!")
+
+age = 75
+if age >= 55:
+    print("Discount applied")
+
+is_day = True
+if is_day == True:
+    print("Lights off!")
+
+can_drive = False
+if age >= 18:
+    can_drive = True
+print(can_drive)
+
+# NOT OPERATOR
+available = False
+if available:
+    print("In stock")
+if not available:
+    print("Out of stock")
+
+
