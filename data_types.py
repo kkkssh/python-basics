@@ -16,6 +16,15 @@ print("Full name:", full_name)
 # mixing variable and string
 print("Direct:", first_name + " Kim")
 
+# F-STRING (formatted string)
+full_name_f = f"{first_name} {last_name}"
+print("F-string:", full_name_f)
+
+total_messages = 7
+read_messages = 3
+print("F-string:", f"{read_messages} new messages")
+print("F-string:", f"{total_messages - read_messages} new messages")
+
 
 # NUMERIC TYPES
 
@@ -39,19 +48,47 @@ pi = 3.14159
 #           when storing True in is_on, we say that we assign a value to a variable
 is_on = True
 is_off = False
-print("type(is_on):", type(is_on))
 
-# BOOLEAN FROM EXPRESSIONS
-print(5 > 3)   # True 
-print(2 > 10)  # False
+# COMPARISON OPERATORS
+# EQUALITY OPERATOR
+votes = 10
+fruit = "apple"
+print(votes == 10)  # True
+print(9 == votes)   # False
+print(fruit == "apple")    # True
+print(fruit == "orange")   # False   
+
+# INEQUALITY OPERATOR
+print(votes != 10)  # False
+print(9 != votes)   # True
+print(fruit != "apple")    # False
+print(fruit != "orange")   # True
+
+# LESS-THAN OPERATOR
+print(votes < 12)   # True
+print(votes < 10)   # False
+
+# GREATER-THAN OPERATOR
+print(votes > 7)    # True
+print(votes > 12)   # False
+
+# LESS-THAN-OR-EQUAL-TO OPERATOR
+print(votes <= 12)  # True
+print(votes <= 10)  # True
+print(votes <= 7)   # False
+
+# GREATER-THAN-OR-EQUAL-TO OPERATOR
+print(votes >= 12)  # False
+print(votes >= 10)  # True
+print(votes >= 7)   # True
 
 # NOT OPERATOR (negation)
-print(not True)   # False
-print(not False)  # True
+print(not True)     # False
+print(not False)    # True
 
 # using variables
-print(not is_off) # True
-print(not is_on)   # False
+print(not is_off)   # True
+print(not is_on)    # False
 
 
 
