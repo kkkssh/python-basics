@@ -96,3 +96,12 @@ if average_grade == "A" or final_score >= 1400 or won_competition:
 # AND + OR MIXED CONDITIONS
 if average_grade == "A" or (final_score >= 1400 and won_competition):
     print("Advanced certificate achieved!")
+
+# INPUT + IF
+age = int(input("Enter your age: "))
+has_permit = input("Do you have a permit? (yes/no): ")
+
+if age >= 18 and has_permit == "yes":
+    print("You can drive")
+else:
+    print("You cannot drive")  
