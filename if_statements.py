@@ -76,3 +76,23 @@ elif hour < 21:
     print("Good evening")
 else:
     print("Good night")
+
+# AND OPERATOR : complex decision
+age = 18
+has_permit = True
+is_insured = False       
+if age >= 18 and has_permit and is_insured:
+    print("Can drive")
+else:
+    print("Can't drive")
+
+# OR OPERATOR : alternative conditions
+average_grade = "B"
+final_score = 1400
+won_competition = True
+if average_grade == "A" or final_score >= 1400 or won_competition:
+    print("Certificate achieved!")
+
+# AND + OR MIXED CONDITIONS
+if average_grade == "A" or (final_score >= 1400 and won_competition):
+    print("Advanced certificate achieved!")
