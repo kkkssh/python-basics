@@ -3,7 +3,7 @@
 # =========================
 
 # VARIABLES: store information
-# use snake_case for multiple words
+#            use snake_case for multiple words
 
 # = : to store a value inside it
 #     we assign a value to a variable
@@ -39,11 +39,11 @@ print(new_status)
 # SELF-ASSIGNMENT : increase or decrease variables set to numbers
 #                   used to track changing values over time
 wallet = 3
-wallet += 2         # wallet = wallet + 2
-wallet -= 1         # wallet = wallet -1
+wallet += 2      # wallet = wallet + 2
+wallet -= 1      # wallet = wallet -1
 print(wallet)
 
 name = "Account name: "
 name += "Joanne"    # name = name + "Joanne"
-name += " Rowling"   # name = name + " Rowling"
+name += " Rowling"  # name = name + " Rowling"
 print(name)
