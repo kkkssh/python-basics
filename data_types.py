@@ -45,7 +45,6 @@ pi = 3.14159
 
 
 # BOOLEAN : the special values True and False
-#           when storing True in is_on, we say that we assign a value to a variable
 is_on = True
 is_off = False
 

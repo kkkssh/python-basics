@@ -5,7 +5,8 @@
 # VARIABLES: store information
 # use snake_case for multiple words
 
-# = : we use = sign to store a value inside it
+# = : to store a value inside it
+#     we assign a value to a variable
 
 # Lines of code are instructions for the computer to follow
 
@@ -33,3 +34,16 @@ new_status = "download"
 
 new_status = default_option
 print(new_status)
+
+
+# SELF-ASSIGNMENT : increase or decrease variables set to numbers
+#                   used to track changing values over time
+wallet = 3
+wallet += 2         # wallet = wallet + 2
+wallet -= 1         # wallet = wallet -1
+print(wallet)
+
+name = "Account name: "
+name += "Joanne"    # name = name + "Joanne"
+name += " Rowling"   # name = name + " Rowling"
+print(name)
