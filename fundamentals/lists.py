@@ -45,6 +45,15 @@ for score in final_scores:
     if score > 16:
         print(f"High score: {score}")
 
+# FILTERING DATA (STORING RESULTS)
+high_scores = []
+
+for score in final_scores:
+    if score > 16:
+        high_scores.append(score)
+
+print(high_scores)
+
 # GETTING LIST LENGTH
 # len() : to get the number of elements in a list
 print(f"Total scores: {len(final_scores)}")      # Total scores: 4 
