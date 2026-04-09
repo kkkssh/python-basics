@@ -35,3 +35,18 @@ print(fruits)
 fruits.remove("mango")
 print(fruits)
 
+# LOOPING THROUGH LISTS
+final_scores = [17, 20, 33, 12]
+for score in final_scores:
+    print(f"Adjusted score: {score + 1}")
+
+# GETTING LIST LENGTH
+# len() : to get the number of elements in a list
+print(f"Total scores: {len(final_scores)}")      # Total scores: 4 
+
+# CONDITIONAL STATEMENTS WITH LISTS
+sodas = ["coke", "fanta", "7up"]
+if len(sodas) > 2:
+    print("Too much soda!")
+else:
+    print("All good")
