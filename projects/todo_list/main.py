@@ -24,8 +24,9 @@ while True:
     print("1. Add a list")
     print("2. View todo lists")
     print("3. Remove a list")
+    print("4. Exit")
 
-    choice = input("Enter the number of the menu(1/2/3): ")
+    choice = input("Enter the number of the menu(1/2/3/4): ")
 
     if choice == "1":
         todo = input("Write your todo list: ")
@@ -38,8 +39,12 @@ while True:
         delete = input("Remove your task: ")
         todo_lists.remove(delete)
     
+    elif choice == "4":
+        print("Exiting the program")
+        break
+
     else:
         print("Choose the right number")
-        break
+        
 
 
