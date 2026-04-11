@@ -13,7 +13,7 @@
 # - Allows user to add tasks to the list
 # - Displays all tasks with numbering
 # - Shows a message if the list is empty
-# - Allows user to remove tasks from the list
+# - Allows user to remove tasks by selecting a task number
 # - Repeats continuously until the user chooses to exit
 
 
@@ -44,8 +44,17 @@ while True:
                 index += 1
 
     elif choice == "3":
-        delete = input("Remove your task: ")
-        todo_lists.remove(delete)
+        if len(todo_lists) == 0:
+            print("Your todo list is empty")
+        else:
+            index = 1
+            for task in todo_lists:
+                print(f"{index}. {task}")
+                index += 1
+
+            delete_num = int(input("Enter the task number to remove: "))
+            remove_task = todo_lists.pop(delete_num - 1)
+            print(f"{remove_task} is deleted")
     
     elif choice == "4":
         print("Exiting the program")
