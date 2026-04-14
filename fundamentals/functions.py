@@ -171,3 +171,46 @@ leaderboard = update_first_place(leaderboard, "Lena")
 print(leaderboard)  # ['Lena', 'Meg', 'Cy']
 
 # FUNCTIONS WITH LOOPS
+def onboard_passengers(bookings):
+    counter = 1
+    while counter <= bookings:
+        print(f"Passenger {counter} on board")
+        counter += 1
+
+onboard_passengers(4)
+
+def onboard_passengers(bookings):
+    for i in range(1, bookings + 1):
+        print(f"Passenger {i} on board")
+
+onboard_passengers(4)
+
+def do_countdown(counter):
+    while counter > 0:
+        print(counter)
+        counter -= 1
+    print("Go!")
+
+do_countdown(3)
+
+def display_progress(total_files):
+    for i in range(total_files):    # how many times a loop runs
+        print(f"Downloading file {i + 1} out of {total_files}")
+
+display_progress(3)
+
+def halve_price(cart):
+    for price in cart:
+        print(f"New price: {price / 2}")
+
+cart_list = [5, 20, 8]
+halve_price(cart_list)
+
+def halve_price(cart):
+    new_prices = []
+    for price in cart:
+        new_prices.append(price / 2)
+    return new_prices
+
+cart_list = [5, 20, 8]
+print(halve_price(cart_list))
