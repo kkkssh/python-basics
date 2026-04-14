@@ -86,3 +86,88 @@ def create_email(name, year):
 
 email = create_email("jo", "2026")
 print(email)
+
+# VARIABLE SCOPE
+def apply_discount(price):
+    discount = 20    # local scope
+    discount = 10
+    return price - discount
+
+final_price = apply_discount(50)
+print(final_price)
+
+rent = 1000   # global scope
+def calculate_spendings(groceries):
+    print(f"Total: {rent + groceries}")
+
+print(f"Rent: {rent}")
+calculate_spendings(300)
+
+# NESTED CONDITIONALS
+def add_shipping(cart):
+    if cart < 100:
+        print(f"Total: {cart + 10}")
+    else:
+        print(f"Total: {cart}")
+
+add_shipping(45)
+add_shipping(200)
+
+def calculate(operator, x, y):
+    if operator == "+":
+        print(x + y)
+    elif operator == "-":
+        print(x - y)
+    else:
+        print(f"Unknown: {operator}")
+
+calculate("-", 30, 10)
+
+def show_progress(points):
+    if points > 1000:
+        print("New highest score!")
+    print("Ready for the next level?")
+
+show_progress(900)
+
+# FUNCTIONS WITH LISTS
+def is_multiplayer(players):
+    print(len(players) == 2)
+
+players = ["Amy", "Jay"]
+is_multiplayer(players)  # True
+
+def display_programme(movies):
+    print(f"Airing tonight: {movies}")
+
+movie_list = ["Alien", "Moon"]
+display_programme(movie_list)
+
+def count_passengers(passengers):
+    print(len(passengers))
+
+passengers = ["June", "Sam", "Lee"]
+count_passengers(passengers)
+
+def is_booked(passengers):
+    print(len(passengers) > 4)
+
+passengers = ["June", "Sam", "Lee"]
+is_booked(passengers)   # False
+
+def get_winner(top_players):
+    winner = top_players[0]
+    print(f"Game winner: {winner}")
+
+top_players = ["Jay", "Meg", "Cy"]
+get_winner(top_players)    # Game winner: Jay
+
+def update_first_place(leaderboard, player):
+    leaderboard[0] = player
+    return leaderboard
+
+leaderboard = ["Jay", "Meg", "Cy"]
+leaderboard = update_first_place(leaderboard, "Lena")
+print(leaderboard)  # ['Lena', 'Meg', 'Cy']
+
+# FUNCTIONS WITH LOOPS
