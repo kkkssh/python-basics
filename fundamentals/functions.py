@@ -170,6 +170,13 @@ leaderboard = ["Jay", "Meg", "Cy"]
 leaderboard = update_first_place(leaderboard, "Lena")
 print(leaderboard)  # ['Lena', 'Meg', 'Cy']
 
+def is_valid(parts):
+    print(len(parts) == 2)
+
+email = "laurie@gmail.com"
+user_and_domain = email.split("@")
+is_valid(user_and_domain)   # True
+
 # FUNCTIONS WITH LOOPS
 def onboard_passengers(bookings):
     counter = 1
