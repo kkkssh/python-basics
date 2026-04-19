@@ -47,10 +47,10 @@ while True:
             index = 1
             for task, done in todo_lists:
                 if done == True:
-                    status = "Done"
+                    status = "☑️"
                 else:
-                    status = "Not done"
-                print(f"{index}. {task} - {status}")
+                    status = "❎"
+                print(f"{index}. [{status}] {task}")
                 index += 1
 
     elif choice == "3":
@@ -60,10 +60,10 @@ while True:
             index = 1
             for task, done in todo_lists:
                 if done == True:
-                    status = "Done"
+                    status = "☑️"
                 else:
-                    status = "Not done"
-                print(f"{index}. {task} - {status}")
+                    status = "❎"
+                print(f"{index}. [{status}] {task}")
                 index += 1
 
             complete_num = int(input("Enter the task number to mark as complete: "))
@@ -86,10 +86,10 @@ while True:
             index = 1
             for task, done in todo_lists:
                 if done == True:
-                    status = "Done"
+                    status = "☑️"
                 else:
-                    status = "Not done"
-                print(f"{index}. {task} - {status}")
+                    status = "❎"
+                print(f"{index}. [{status}] {task}")
                 index += 1
 
 
