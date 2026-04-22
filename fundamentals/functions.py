@@ -19,7 +19,8 @@ def show_user_status():
 
 show_user_status()
 
-# CREATING PARAMETER
+
+# CREATING PARAMETERS
 def greet(name):    # name = parameter
     print(f"Hello, {name}")
 
@@ -31,6 +32,7 @@ def display_half(number):
     print(half)
 
 display_half(10)
+
 
 # RETURNING VALUES
 def age_label(age):
@@ -63,6 +65,7 @@ def is_adult(age):
 
 print(is_adult(20))  # True
 
+
 # MULTIPLE PARAMETERS
 def add_numbers(a, b):
     return a + b
@@ -87,10 +90,10 @@ def create_email(name, year):
 email = create_email("jo", "2026")
 print(email)
 
+
 # VARIABLE SCOPE
 def apply_discount(price):
     discount = 20    # local scope
-    discount = 10
     return price - discount
 
 final_price = apply_discount(50)
@@ -103,7 +106,8 @@ def calculate_spendings(groceries):
 print(f"Rent: {rent}")
 calculate_spendings(300)
 
-# NESTED CONDITIONALS
+
+# FUNCTIONS WITH CONDITIONALS
 def add_shipping(cart):
     if cart < 100:
         print(f"Total: {cart + 10}")
@@ -129,6 +133,7 @@ def show_progress(points):
     print("Ready for the next level?")
 
 show_progress(900)
+
 
 # FUNCTIONS WITH LISTS
 def is_multiplayer(players):
@@ -177,20 +182,21 @@ email = "laurie@gmail.com"
 user_and_domain = email.split("@")
 is_valid(user_and_domain)   # True
 
+
 # FUNCTIONS WITH LOOPS
-def onboard_passengers(bookings):
+def onboard_passengers_while(bookings):
     counter = 1
     while counter <= bookings:
         print(f"Passenger {counter} on board")
         counter += 1
 
-onboard_passengers(4)
+onboard_passengers_while(4)
 
-def onboard_passengers(bookings):
+def onboard_passengers_for(bookings):
     for i in range(1, bookings + 1):
         print(f"Passenger {i} on board")
 
-onboard_passengers(4)
+onboard_passengers_for(4)
 
 def do_countdown(counter):
     while counter > 0:
@@ -206,18 +212,37 @@ def display_progress(total_files):
 
 display_progress(3)
 
-def halve_price(cart):
+def display_halved_prices(cart):
     for price in cart:
         print(f"New price: {price / 2}")
 
 cart_list = [5, 20, 8]
-halve_price(cart_list)
+display_halved_prices(cart_list)
 
-def halve_price(cart):
+def get_halved_prices(cart):
     new_prices = []
     for price in cart:
         new_prices.append(price / 2)
     return new_prices
 
 cart_list = [5, 20, 8]
-print(halve_price(cart_list))
+print(get_halved_prices(cart_list))
+
+
+# FUNCTIONS WITH TUPLES
+# returns multiple values as a tuple
+def get_user():
+    return ("Chloe", 33)
+
+user = get_user()
+print(user)
+
+
+# FUNCTIONS WITH DICTIONARIES
+def get_score(scores, player):
+    if player in scores:
+        return scores[player]
+    return "Player not found"
+
+player_scores = {"Ann": 23, "Michael": 20}
+print(get_score(player_scores, "Ann"))
