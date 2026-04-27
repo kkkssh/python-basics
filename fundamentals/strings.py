@@ -24,6 +24,19 @@ limited_split = domain.split(".", 1)
 print(limited_split)  # ['mail', 'google.com']
 
 
+# EXTRACTING PART OF A STRING
+email = "user@mail.google.com"
+
+# Method 1: Using a variable
+email_parts = email.split("@")
+email_domain = email_parts[1]
+print(email_domain)  # mail.google.com
+
+# Method 2: Direct indexing
+domain_direct = email.split("@")[1]
+print(domain_direct)  # mail.google.com
+
+
 # REPLACE (STRING UPDATE)
 sentence = "Today's special is pasta"
 updated_sentence = sentence.replace("pasta", "pizza")
