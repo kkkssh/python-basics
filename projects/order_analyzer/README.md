@@ -8,6 +8,9 @@ A simple Python program that analyzes customer order data.
 - Calculates the average order price
 - Filters orders above a certain price
 - Counts how many times each item was ordered
+- Finds the most popular item
+- Formats prices with currency symbols (€)
+- Allows user input for new orders
 
 ## How to Run
 
@@ -20,9 +23,9 @@ python main.py
 ## Example
 
 ```
-Total sales: 24.5
+Total sales: €24.50
 
-Average price: 4.08
+Average price: €4.08
 
 Expensive orders:
 - {'item': 'latte', 'price': 4.5}
@@ -31,6 +34,8 @@ Expensive orders:
 - {'item': 'matcha latte', 'price': 5.0}
 
 Item counts: {'latte': 2, 'americano': 1, 'cake': 1, 'matcha latte': 1, 'tea': 1}
+
+Most popular item: latte
 ```
 
 ## Skills Used
@@ -40,9 +45,7 @@ Item counts: {'latte': 2, 'americano': 1, 'cake': 1, 'matcha latte': 1, 'tea': 1
 - Conditional statements
 - Basic data analysis
 - Basic output formatting
+- User input handling
 
 ## Future Improvements
-- Find the most popular item
-- Format prices with currency symbols
-- Add user input for new orders
 - Save order data to a file
