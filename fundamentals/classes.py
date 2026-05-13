@@ -61,4 +61,39 @@ low_spec.print_specs()
 print()
 
 print("High Spec Computer")
-high_spec.print_specs()
+high_spec.print_specs() 
+
+
+# OBJECT METHODS WITH LISTS
+class Pie:
+    def __init__(self, flavor, ingredients):
+        self.flavor = flavor
+        self.ingredients = ingredients
+        self.num_ingredients = len(ingredients)
+
+    def print_ingredients(self):
+        for i in self.ingredients:
+            print(i)
+
+apple_pie = Pie("apple", ["flour", "eggs", "apples", "butter"])
+
+apple_pie.print_ingredients()
+print(apple_pie.num_ingredients)
+
+
+# INSTANCE VARIABLES VS CLASS VARIABLES
+class Student:
+    school = "Oxford"   # class variable
+
+    def __init__(self, name):
+        self.name = name    # instance variable
+
+
+student1 = Student("Chloe")
+student2 = Student("James")
+
+print(student1.school)
+print(student2.school)
+
+print(student1.name)
+print(student2.name)
