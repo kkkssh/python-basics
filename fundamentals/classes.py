@@ -2,6 +2,10 @@
 # CLASSES & OBJECTS
 # =========================
 
+# object-oriented programming (OOP) is a programming style
+# where related data and functionality are grouped together
+# inside objects
+
 # a class is a blueprint for creating objects
 
 # attributes are variables that belong to an object
@@ -97,3 +101,29 @@ print(student2.school)
 
 print(student1.name)
 print(student2.name)
+
+
+# FUNCTIONAL PROGRAMMING VS OBJECT-ORIENTED PROGRAMMING
+
+# Functional programming organizes code using functions
+# Object-oriented programming organizes code using objects and classes
+
+
+# Functional style
+def introduce_student(name, major):
+    return f"{name} studies {major}."
+
+print(introduce_student("Chloe", "Business"))
+
+
+# Object-oriented style
+class UniversityStudent:
+    def __init__(self, name, major):
+        self.name = name
+        self.major = major
+
+    def introduce(self):
+        return f"{self.name} studies {self.major}."
+
+student = UniversityStudent("Chloe", "Business")
+print(student.introduce())
