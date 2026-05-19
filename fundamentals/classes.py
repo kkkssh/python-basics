@@ -105,7 +105,7 @@ print(student2.name)
 
 # FUNCTIONAL PROGRAMMING VS OBJECT-ORIENTED PROGRAMMING
 
-# Functional programming organizes code using functions
+# Functional programming organizes code using functions 
 # Object-oriented programming organizes code using objects and classes
 
 
@@ -127,3 +127,35 @@ class UniversityStudent:
 
 student = UniversityStudent("Chloe", "Business")
 print(student.introduce())
+
+
+# INHERITANCE
+
+# inheritance allows a child class to inherit attributes and methods from a parent class
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def greet(self):
+        print("Hi!")
+
+
+class ScienceStudent(Person):
+    def __init__(self, name, age, major):
+        super().__init__(name, age)
+        self.major = major
+
+    def intro(self):
+        print(f"My name is {self.name}")
+        print(f"My major is {self.major}")
+
+
+student = ScienceStudent("Sam", 23, "Chemistry")
+
+print(student.age)
+print(student.major)
+
+student.greet()
+student.intro()
