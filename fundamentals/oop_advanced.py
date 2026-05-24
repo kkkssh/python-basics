@@ -2,7 +2,8 @@
 # ADVANCED OBJECT-ORIENTED PROGRAMMING
 # =========================
 
-# abstraction hides internal implementation and shows only essential functionality
+# abstraction hides internal implementation 
+# and shows only essential functionality
 
 class Car:
     def __init__(self):
@@ -67,3 +68,66 @@ car = SportsCar()
 
 # call method
 car.start_up()
+
+
+# =========================
+# POLYMORPHISM
+# =========================
+
+# polymorphism allows different classes
+# to use the same method in different ways
+
+class Feline:
+    def speak(self):
+        print("Meow")
+
+
+class Cat(Feline):
+    def lick(self):
+        print("Licking paw")
+
+
+class Lion(Feline):
+    def prey(self):
+        print("Pounces on prey")
+
+    def speak(self):
+        print("ROAR!")
+
+
+cat = Cat()
+cat.speak()
+
+lion = Lion()
+lion.speak()
+
+# Polymorphism with a loop
+animals = [Cat(), Lion()]
+
+for animal in animals:
+    animal.speak()
+
+
+# =========================
+# OBJECT STATE AND METHODS
+# =========================
+
+# objects can store state
+# and update it through methods
+
+class Slideshow:
+    def __init__(self, slides):
+        self.slides = slides
+        self.current = 1
+
+    def view_next_slide(self):
+        self.current += 1
+
+    def play(self):
+        while self.current <= self.slides:
+            print("Slide", self.current)
+            self.view_next_slide()
+
+
+slideshow = Slideshow(5)
+slideshow.play()
