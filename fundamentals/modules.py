@@ -55,3 +55,10 @@ test_scores = [33, 7, 4, 6]
 mean_result = mean(test_scores)
 
 print(f"Mean result is {mean_result}")
+
+
+# IMPORTING WITH AN ALIAS
+
+import math as m
+
+print(m.floor(44.32))
