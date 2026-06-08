@@ -23,6 +23,12 @@
 # incomplete statements
 # if cost > 10:
 
+# unexpected EOF (End Of File)
+# occurs when Python reaches the end
+# of a file before completing the code
+
+# print(
+
 
 # INDENTATION ERRORS
 
@@ -39,12 +45,16 @@
 # found the error in the code
 
 
-# EXCEPTIONS
+# DEBUGGING
 
 # Traceback helps us debug our code,
 # which means finding errors
-# best read from bottom to top
 
+# Tracebacks are usually read
+# from bottom to top
+
+
+# COMMON EXCEPTIONS
 
 # ZeroDivisionError occurs when
 # dividing by zero
@@ -75,6 +85,27 @@
 
 # scores = [25, 50, 10]
 # print(scores[5])
+
+
+# ValueError occurs when a value
+# is of the correct type but
+# has an invalid value
+
+# int("hello")
+
+
+# KeyError occurs when a dictionary
+# key does not exist
+
+# person = {"name": "Chloe"}
+# print(person["age"])
+
+
+# AttributeError occurs when an object
+# does not have the requested attribute or method
+
+# text = "hello"
+# text.append("!")
 
 
 # LOGIC ERRORS
