@@ -30,6 +30,7 @@
 # print(
 
 
+
 # INDENTATION ERRORS
 
 # IndentationError is a specific type
@@ -39,10 +40,12 @@
 # print("Too expensive")
 
 
+
 # CARET (^)
 
 # a caret (^) indicates where Python
 # found the error in the code
+
 
 
 # DEBUGGING
@@ -52,6 +55,7 @@
 
 # Tracebacks are usually read
 # from bottom to top
+
 
 
 # COMMON EXCEPTIONS
@@ -108,6 +112,51 @@
 # text.append("!")
 
 
+
+# RAISING EXCEPTIONS
+
+# raise is used to create an exception
+# when a condition is not met
+
+# raise can help prevent invalid data
+# from being used in a program
+
+# slices = 18
+# diners = 0
+
+# if diners < 1:
+#     raise Exception("There must be at least one diner")
+# else:
+#     slices_each = slices / diners
+
+
+# we can define both the kind of error
+# and the error message
+
+# age = -3
+
+# if age < 0:
+#     raise ValueError("Age cannot be negative")
+
+
+# we can use conditions to validate inputs
+# and raise an exception when the conditions are not met
+
+# scores = [125, 60, 189, 88, 16]
+
+# if min(scores) < 0 or max(scores) > 180:
+#     raise ValueError("Error in scores")
+
+
+# raise a specific type of exception
+
+# name = 123
+
+# if type(name) != str:
+#     raise TypeError("Name must be a string")
+
+
+
 # LOGIC ERRORS
 
 # logic errors occur when there is
@@ -123,3 +172,4 @@
 
 # Correct version:
 # average_age = (john + alana) / 2
+
