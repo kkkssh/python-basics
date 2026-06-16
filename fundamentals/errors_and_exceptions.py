@@ -157,6 +157,81 @@
 
 
 
+# TRY / EXCEPT
+
+# try and except are used when
+# there is a chance an operation
+# may not be possible
+
+hours = []
+
+try:
+    average = sum(hours) / len(hours)
+
+except ZeroDivisionError:
+    average = 0
+
+print(average)
+
+
+# pass can be used if we do not want
+# any code to execute after except
+
+try:
+    print("The average is " + str(average))
+
+except:
+    pass
+
+
+# raise can be used together with
+# try and except
+
+# try:
+#     10 + score
+#
+# except NameError:
+#     raise ValueError("Invalid score")
+
+
+# else executes only if
+# no error occurs
+
+details = {
+    "name": "Helena",
+    "occupation": "carpenter",
+    "age": 35
+}
+
+try:
+    age = details["age"]
+
+except KeyError:
+    raise NameError("No age value in record")
+
+else:
+    print(f"Maximum heart rate is {220 - age}")
+
+
+# finally executes regardless
+# of whether an error occurs
+
+entry = 50
+
+try:
+    result = entry * 1.5
+
+except Exception:
+    raise ValueError("Result cannot be calculated")
+
+else:
+    print(result)
+
+finally:
+    print("Try another value?")
+
+
+
 # LOGIC ERRORS
 
 # logic errors occur when there is
@@ -172,4 +247,3 @@
 
 # Correct version:
 # average_age = (john + alana) / 2
-
