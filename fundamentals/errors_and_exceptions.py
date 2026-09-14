@@ -2,7 +2,8 @@
 # ERRORS AND EXCEPTIONS
 # =========================
 
-# errors stop a program from running
+# errors can prevent a program
+# from running correctly
 
 # exceptions are errors that occur
 # while the program is running
@@ -140,7 +141,8 @@
 
 
 # we can use conditions to validate inputs
-# and raise an exception when the conditions are not met
+# and raise an exception when the conditions
+# are not met
 
 # scores = [125, 60, 189, 88, 16]
 
@@ -194,6 +196,106 @@ except:
 #     raise ValueError("Invalid score")
 
 
+
+# =========================
+# MULTIPLE EXCEPT HANDLERS
+# =========================
+
+# We can use multiple except blocks
+# to handle different exceptions separately.
+
+entry = "0"
+total = 24
+
+try:
+    quantity = int(entry)
+    price_each = total / quantity
+
+except ValueError:
+    print("Enter a whole number")
+
+except ZeroDivisionError:
+    print("Quantity must be above zero")
+
+except:
+    print("An error occurred")
+
+
+# specific exception handlers should
+# come before a bare except
+
+# bare except catches any exception
+# that was not caught by the previous handlers
+
+
+
+# =========================
+# EXCEPTION OBJECT
+# =========================
+
+# "as" stores the exception object
+# in a variable.
+
+price_text = "free"
+
+try:
+    price = float(price_text)
+
+except ValueError as error:
+    print(error)
+
+
+# str() converts the exception object
+# to a string.
+
+price_text = "free"
+
+try:
+    price = float(price_text)
+
+except ValueError as error:
+    message = str(error)
+    print(message)
+
+
+# print() can also print the exception
+# directly with other arguments.
+
+price_text = "free"
+
+try:
+    price = float(price_text)
+
+except ValueError as error:
+    print("Price failed:", error)
+
+
+
+# =========================
+# HANDLING DIFFERENT EXCEPTIONS
+# =========================
+
+# different exceptions can be handled
+# separately with different messages.
+
+order = {
+    "price": "12.50"
+}
+
+try:
+    price = float(order["price"])
+    quantity = order["quantity"]
+
+except ValueError as error:
+    print("Price failed:", error)
+
+except KeyError as error:
+    print("Read failed:", error)
+
+
+
+# ELSE
+
 # else executes only if
 # no error occurs
 
@@ -212,6 +314,9 @@ except KeyError:
 else:
     print(f"Maximum heart rate is {220 - age}")
 
+
+
+# FINALLY
 
 # finally executes regardless
 # of whether an error occurs
