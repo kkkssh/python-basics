@@ -11,5 +11,4 @@ To build a strong foundation in Python for data analysis and future master's stu
 
 ## Interests
 - Data Analytics / Business Analytics
-- Data Science
-- Bio-related Data (Health Data, Bioinformatics)
+- Supply Chain / Operations Management
