@@ -36,7 +36,7 @@ print(fruits)
 fruits.pop()
 print(fruits)
 
-# # pop(index) - removes element at index
+# pop(index) - removes element at index
 fruits.pop(1)
 print(fruits)
 
