@@ -7,7 +7,7 @@ To build a strong foundation in Python for data analysis and future master's stu
 
 ## Contents
 - Fundamentals: Core Python concepts
-- Projects: Small projects to apply what I’ve learned
+- Projects: Small projects and data analysis practice using Python and Pandas
 
 ## Interests
 - Data Analytics / Business Analytics
