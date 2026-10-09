@@ -3,7 +3,7 @@
 This repository contains my Python learning and practice.
 
 ## Goal
-To build a strong foundation in Python for data analysis and future master's studies in Europe.
+To build a strong foundation in Python for data analysis and future master's studies.
 
 ## Contents
 - Fundamentals: Core Python concepts
@@ -11,4 +11,5 @@ To build a strong foundation in Python for data analysis and future master's stu
 
 ## Interests
 - Data Analytics / Business Analytics
-- Supply Chain / Operations Management
+- Accounting & Analytics
+- GIS
