@@ -48,3 +48,19 @@ print(df.groupby("Route")["Passengers"].mean())
 print(df.groupby("Route")["Passengers"].sum())
 
 # sum(): Add up the passenger numbers for each route
+
+
+# Count the number of passenger records by route
+print(df.groupby("Route")["Passengers"].count())
+
+# count(): Count non-missing values in each group
+
+
+# Calculate multiple statistics by route
+print(df.groupby("Route")["Passengers"].agg(["count", "mean", "sum"]))
+
+# agg(): Apply multiple aggregation functions at once
+
+
+# Calculate the minimum and maximum passenger numbers by route
+print(df.groupby("Route")["Passengers"].agg(["min", "max"]))
